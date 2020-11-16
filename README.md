@@ -24,7 +24,7 @@
 - belongs_to :users
 - belongs_to prototypes
 
-## userテーブル
+## prototypesテーブル
 | Colunmn    | Type            | Options           |
 | ---------- | --------------- | ----------------- |
 | title      | string          | null false        |
