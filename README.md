@@ -2,7 +2,7 @@
 ## userテーブル
 | Colunmn    | Type            | Options           |
 | ---------- | --------------- | ----------------- |
-| user       | string          | null false        |
+| email      | string          | null false        |
 | password   | string          | null false        |
 | name       | string          | null false        |
 | profile    | text            | null false        |
