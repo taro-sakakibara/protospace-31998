@@ -6,6 +6,9 @@ class CreatePrototypes < ActiveRecord::Migration[6.0]
       t.text :concept, null: false
       t.references :user, foreign_key: true
 
+      has_many :comments
+      belongs_to :users
+      has_one_attached :image
 
 
 
