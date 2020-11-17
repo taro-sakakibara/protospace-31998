@@ -23,6 +23,23 @@ class PrototypesController < ApplicationController
     @prototype = Prototype.find(params[:id])
   end
 
+  def edit
+    @prototype = Prototype.find(params[:id])
+  end
+
+  def update
+    prototype = Prototype.find(params[:id])
+    prototype.update(prototype_params)
+
+    if prototype.update(prototype_params)
+      redirect_to prototype_path(prototype.id)
+    else
+      #  どうしてedit_prototype_pathはだめなのだろう。。。
+      render :edit
+    end
+
+  end
+
   private
   def prototype_params
     params.require(:prototype).permit(:title, :cath_copy, :concept, :image).merge(user_id: current_user.id)
