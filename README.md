@@ -21,10 +21,10 @@
 | prototype  | references      |                   |
 
 ## Association
-- belongs_to :users
-- belongs_to prototypes
+- belongs_to :user
+- belongs_to prototype
 
-## userテーブル
+## prototypesテーブル
 | Colunmn    | Type            | Options           |
 | ---------- | --------------- | ----------------- |
 | title      | string          | null false        |
@@ -35,4 +35,4 @@
 
 ### Association
 - has_many :comments
-- belongs_to :users
+- belongs_to :user
