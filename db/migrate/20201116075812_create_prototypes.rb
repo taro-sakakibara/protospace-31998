@@ -7,7 +7,7 @@ class CreatePrototypes < ActiveRecord::Migration[6.0]
       t.references :user, foreign_key: true
 
       has_many :comments
-      belongs_to :users
+      belongs_to :user
       has_one_attached :image
 
 
