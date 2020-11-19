@@ -30,7 +30,7 @@ class PrototypesController < ApplicationController
     unless user_signed_in?
       redirect_to action: :index
     end
-    # @prototype = Prototype.find(params[:id])
+    @prototype = Prototype.find(params[:id])
   end
 
   def update
